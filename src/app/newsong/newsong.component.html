@@ -1,0 +1,21 @@
+<form>
+    
+    <div class="form-group">
+        <label for="title">Author</label>
+        <input 
+            type="text" 
+            class="form-control"
+            #author
+        >
+    </div>
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input 
+            type="text" 
+            class="form-control"
+            #title
+        >
+    </div>
+    <button class="btn btn-success" (click)="onAdd(author,title)">Add</button>
+</form >
+<br>

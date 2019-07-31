@@ -1,0 +1,15 @@
+<nav class="navbar navbar-dark bg-primary ">
+    <div class="text-center navbar-form">
+                <input 
+                class="mr-sm-2 form-control" 
+                type="search" 
+                placeholder="Search" 
+                aria-label="Search"
+                #searchSong
+                [(ngModel)]="search"
+                (keyup)="onKeyup()"
+                >
+                <button class="btn btn-danger" (click)="onClick()">Search</button>
+    </div>    
+        
+</nav>

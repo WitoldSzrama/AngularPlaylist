@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-4">
+        <app-newsong (newsong)="addSong($event)"></app-newsong>
+    </div>
+    <div class="col-md-8">
+         <div *ngFor="let song of playlist" >
+             <div class="row panel" *ngIf="searchMusic(song)">
+                 <div class="col-xs-8">
+                    <h5> <b>{{song.author}}</b> - {{song.title}} </h5> 
+                 </div>
+                 <div class="col-xs-4 text-right">
+                        <button class="btn btn-danger" (click)="onDelete(song)">Delete</button>
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>
